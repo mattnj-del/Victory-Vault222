@@ -2,220 +2,135 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<title>Victory Vault</title>
-
-<link rel="stylesheet" href="styles.css">
-
+    <meta charset="UTF-8">
+    <title>Victory Vault</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
+    <header>
+        <h1>Victory Vault</h1>
+        <h3>Where Every Fan Belongs</h3>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="shop.html">Shop</a> |
+            <a href="livescores.html">Live Scores</a> |
+            <a href="community.html">Community</a> |
+            <a href="about.html">About</a> |
+            <a href="materialize.html">Materialize</a> |
+            <a href="jquery.html">JQuery</a>|
+            <a href="bootstrap.html">Bootstrap</a>
+        </nav>
+        <hr>
+    </header>
 
-<h1>Victory Vault</h1>
-<h3>Where Every Fan Belongs</h3>
+    <main>
+        <section>
+            <h2>Welcome to Victory Vault</h2>
+            <p>
+                Victory Vault is a sports-focused website created for fans who want a central place
+                to stay connected to the sports world. Whether you are looking for live game scores,
+                breaking sports news, or official team merchandise, Victory Vault brings everything
+                together in one convenient location.
+            </p>
 
-<nav>
-<a href="index.html">Home</a> |
-<a href="shop.html">Shop</a> |
-<a href="livescores.html">Live Scores</a> |
-<a href="community.html">Community</a> |
-<a href="about.html">About</a> |
-<a href="materialize.html">Materialize</a> |
-<a href="jquery.html">JQuery</a>|
-<a href="bootstrap.html">Bootstrap</a>
-</nav>
+            <img src="https://picsum.photos/200/100?sports" alt="Victory Vault Logo">
 
-<hr>
+            <p>
+                Sports bring people together from all over the world, regardless of which teams
+                they support. Victory Vault celebrates that shared passion by offering updates
+                from multiple leagues, fan discussions, and easy access to sports resources.
+            </p>
 
-</header>
+            <h3>View News From Major Sports Leagues</h3>
+            <ul>
+                <li><a href="https://www.nfl.com/news" target="_blank">National Football League</a></li>
+                <li><a href="https://www.nba.com/news" target="_blank">National Basketball Association</a></li>
+                <li><a href="https://www.mlb.com/news" target="_blank">Major League Baseball</a></li>
+                <li><a href="https://www.nhl.com/news" target="_blank">National Hockey League</a></li>
+                <li><a href="https://www.ncaa.com/" target="_blank">NCAA College Sports</a></li>
+                <li><a href="https://www.pgatour.com/news" target="_blank">PGA Tour Golf</a></li>
+                <li><a href="https://www.ufc.com/trending/all" target="_blank">UFC</a></li>
+            </ul>
+        </section>
 
-<main>
+        <section>
+            <h2>Featured Games</h2>
+            <p>
+                Stay updated with some of the most exciting matchups happening across professional
+                sports leagues.
+            </p>
 
-<section>
+            <img src="https://picsum.photos/500/300?stadium" alt="Fans in Stadium" width="500">
 
-<h2>Welcome to Victory Vault</h2>
+            <hr>
 
-<p>
-Victory Vault is a sports-focused website created for fans who want a central place
-to stay connected to the sports world. Whether you are looking for live game scores,
-breaking sports news, or official team merchandise, Victory Vault brings everything
-together in one convenient location. The website is designed to help fans quickly
-access the information they care about while also creating a space where people
-who share a passion for sports can connect and interact.
-</p>
+            <h3>Your Favorite Teams</h3>
+            <p id="sport"></p>
+            <p>
+                In the future, this section will allow users to track their favorite teams and
+                quickly see their upcoming games, recent results, and current standings. 
+            </p>
+            
+            <h3>Tell us your favorite sport/team/city to allow us to feed you content suited for you!</h3>
+            <br>
+            <input id="userInput"> <br><br>
+            <button onclick="myFunction()">Submit</button>
+            <p id="message"></p>
+            
+            <script>
+                function myFunction() {
+                    let userInput = document.querySelector("#userInput");
+                    let message = document.querySelector("#message");
+                    message.innerHTML = "Thank you for submitting your favorite sport: " + userInput.value;
+                }
+            </script>
 
+            <table border="1">
+                <tr>
+                    <th>Team Name</th>
+                    <th>City</th>
+                    <th>Sport</th>
+                </tr>
+                <tr>
+                    <td>Team 1</td>
+                    <td>City 1</td>
+                    <td>Football</td>
+                </tr>
+                <tr>
+                    <td>Team 2</td>
+                    <td>City 2</td>
+                    <td>Basketball</td>
+                </tr>
+                <tr>
+                    <td>Team 3</td>
+                    <td>City 3</td>
+                    <td>Baseball</td>
+                </tr>
+            </table>
+        </section>
 
-<img src="images/logo.png" alt="Victory Vault Logo">
+        <section>
+            <h2>Trending Sports News</h2>
+            <p>
+                The sports world moves quickly, with breaking news, trades, highlights,
+                and game-changing moments happening every day.
+            </p>
 
-</div>
-<p>
-Sports bring people together from all over the world, regardless of which teams
-they support. Victory Vault celebrates that shared passion by offering updates
-from multiple leagues, fan discussions, and easy access to sports resources.
-Our goal is to create a community where fans can follow their favorite teams,
-discover new stories from across the sports world, and enjoy the excitement
-that comes with every game.
-</p>
+            <img src="https://picsum.photos/500/300?basketball" alt="Basketball Hoop" width="500">
 
-<h3>View News From Major Sports Leagues</h3>
+            <p>
+                In the future, this section will include fan discussions where users
+                can share their reactions and debate game outcomes.
+            </p>
+        </section>
+    </main>
 
-<ul>
-
-<li>
-<a href="https://www.nfl.com/news" target="_blank">
-National Football League
-</a>
-</li>
-
-<li>
-<a href="https://www.nba.com/news" target="_blank">
-National Basketball Association
-</a>
-</li>
-
-<li>
-<a href="https://www.mlb.com/news" target="_blank">
-Major League Baseball
-</a>
-</li>
-
-<li>
-<a href="https://www.nhl.com/news" target="_blank">
-National Hockey League
-</a>
-</li>
-
-<li>
-<a href="https://www.ncaa.com/" target="_blank">
-NCAA College Sports
-</a>
-</li>
-
-<li>
-<a href="https://www.pgatour.com/news" target="_blank">
-PGA Tour Golf
-</a>
-</li>
-
-<li>
-<a href="https://www.ufc.com/trending/all" target="_blank">
-UFC
-</a>
-</li>
-
-</ul>
-
-</section>
-
-<section>
-
-<h2>Featured Games</h2>
-
-<p>
-Stay updated with some of the most exciting matchups happening across professional
-sports leagues. Victory Vault will continue to expand its coverage of live games
-and featured events so fans can easily keep track of the biggest competitions.
-</p>
-
-<img src="Images/Footballstadium.jpg" alt="Fans in Stadium" width="500">
-
-<hr>
-
-<h3>Your Favorite Teams</h3>
-
-<p id="sport"></p>
-
-<p>
-In the future, this section will allow users to track their favorite teams and
-quickly see their upcoming games, recent results, and current standings. 
-</p>
- <!-- JavaScript -->
-       <h3>Tell us your favorite sport/team/city to allow us to feed you content suited for you!</h3>
-           <br>
-           <input id="userInput"> <br><br>
-           <button onclick="myFunction()">Submit</button>
-           <p id="message"></p>
-           <script>function myFunction() {
-           let userInput = document.querySelector ("#userInput");
-           let message = document.querySelector ("#message");
-           message.innerHTML = "Thank you for submitting your favorite sport!" + userInput.value;
-           }
-           </script>
-
-<table border="1">
-
-<tr>
-<th>Team Name</th>
-<th>City</th>
-<th>Sport</th>
-</tr>
-
-<tr>
-<td>Team 1</td>
-<td>City 1</td>
-<td>Football</td>
-</tr>
-
-<tr>
-<td>Team 2</td>
-<td>City 2</td>
-<td>Basketball</td>
-</tr>
-
-<tr>
-<td>Team 3</td>
-<td>City 3</td>
-<td>Baseball</td>
-</tr>
-
-</table>
-
-</section>
-
-<section>
-
-<h2>Trending Sports News</h2>
-
-<p>
-The sports world moves quickly, with breaking news, trades, highlights,
-and game-changing moments happening every day. Victory Vault provides
-fans with quick access to trending stories from across major leagues,
-helping them stay informed about the teams and athletes they follow.
-</p>
-
-
-<img src="Images/basketballhoop.jpg" alt="Basketball Hoop" width="500">
-
-<p>
-In the future, this section will include fan discussions where users
-can share their reactions, debate game outcomes, and discuss the
-biggest moments happening in sports. These conversations will help
-create a community where fans from different teams can interact and
-share their passion for the game.
-</p>
-
-</section>
-
-</main>
-
-<footer>
-
-<hr>
-
-<p><strong>Victory Vault</strong></p>
-
-<p>Email: victoryvaultsports@gmail.com</p>
-
-<p>Phone: (003)022-2026</p>
-
-<p>Location: Oxford, Ohio</p>
-
-<p>&copy; 2026 Victory Vault. All rights reserved.</p>
-
-</footer>
-
-</body>
-
-</html>
+    <footer>
+        <hr>
+        <p><strong>Victory Vault</strong></p>
+        <p>Email: victoryvaultsports@gmail.com</p>
+        <p>Phone: (003) 022-2026</p>
+        <p>Location: Oxford, Ohio</p>
+        <p>&copy
