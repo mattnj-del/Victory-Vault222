@@ -64,11 +64,7 @@
        <div id="email-response"></div>
    </div>
 
-
-
-
-    
-    <section id="basic" class="demo-section">
+<section id="basic" class="demo-section">
 
 
       <div class="controls">
@@ -80,19 +76,16 @@
 
       <div class="carousel" id="basicCarousel">
         <a class="carousel-item" href="#one!">
-         "<img src="https://picsum.photos/id/1058/600/400" alt="Soccer ball on a field" />
+         <img src="https://picsum.photos/id/1058/600/400" alt="Soccer ball on a field" />
         </a>
         <a class="carousel-item" href="#two!">
-         "<img src="https://picsum.photos/id/1077/600/400" alt="Sports stadium and track" />
+         <img src="https://picsum.photos/id/1077/600/400" alt="Sports stadium and track" />
         </a>
         <a class="carousel-item" href="#three!">
-       "<img src="https://picsum.photos/id/146/600/400" alt="Person on a bicycle" />
+       <img src="https://picsum.photos/id/146/600/400" alt="Person on a bicycle" />
         </a>
         <a class="carousel-item" href="#four!">
-       "<img src="https://picsum.photos/id/73/600/400" alt="Baseball field and items" />
-        </a>
-        <a class="carousel-item" href="#five!">
-        "<img src="https://picsum.photos/id/1022/600/400" alt="Person surfing a wave" />
+       <img src="https://picsum.photos/id/73/600/400" alt="Baseball field and items" />
         </a>
       </div>
 
@@ -104,6 +97,20 @@
 
     <div class="divider"></div>
 
-
-
-      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems);
+        
+        // Linking your existing buttons to the swipe action
+        document.getElementById('basicPrev').addEventListener('click', function() {
+          M.Carousel.getInstance(document.getElementById('basicCarousel')).prev();
+        });
+        document.getElementById('basicNext').addEventListener('click', function() {
+          M.Carousel.getInstance(document.getElementById('basicCarousel')).next();
+        });
+      });
+    </script>
+</body>
+</html>
