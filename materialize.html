@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Victory Vault - Shop</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+<h1>Victory Vault Shop</h1>
+
+<nav>
+<a href="index.html">Home</a> |
+<a href="shop.html">Shop</a> |
+<a href="livescores.html">Live Scores</a> |
+<a href="community.html">Community</a> |
+<a href="about.html">About</a>
+<a href="materialize.html">Materialize</a>
+<a href="jquery.html">JQuery</a> |
+<a href="bootstrap.html">Bootstrap</a>
+
+</nav>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materialize JavaScript including Carousel + Collapsible Demo</title>
+
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+
+  <style>
+    body { padding-bottom: 48px; }
+    header { margin-bottom: 24px; }
+    .demo-section { margin-top: 32px; }
+    .controls .btn { margin-right: 8px; margin-bottom: 8px; }
+    .carousel { margin-top: 12px; }
+
+
+    
+    .collapsible-body p { margin-top: 0; }
+  </style>
+</head>
+
+
+<body>
+  
+  <header>
+    <nav class="blue">
+      <div class="nav-wrapper container">
+     
+    </nav>
+  </header>
+<div id="radio-section" class="section container">
+       <h2>Select Your Favorite Sport</h2>
+       <form>
+           <p>
+               <label>
+                   <input name="Sport" type="radio" value="Football" onclick="displaySport()"/>
+                   <span>Football</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Sport" type="radio" value="Basketball" onclick="displaySport()"/>
+                   <span>Basketball</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Sport" type="radio" value="Baseball" onclick="displaySport()"/>
+                   <span>Baseball</span>
+               </label>
+           </p>
+       </form>
+       <div id="pastry-response"></div>
+   </div>
+ 
+   <div id="feedback-section" class="section container">
+       <h2>Subscribe for Updates</h2>
+       <form onsubmit="submitEmail(event)">
+           <div class="input-field">
+               <input id="email" type="email" required>
+               <label for="email">Email</label>
+           </div>
+           <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+       </form>
+       <div id="email-response"></div>
+   </div>
+
+
+
+
+    
+    <section id="basic" class="demo-section">
+
+
+      <div class="controls">
+        <button id="basicPrev" class="btn waves-effect">Prev</button>
+        <button id="basicNext" class="btn waves-effect">Next</button>
+      
+      </div>
+
+
+      <div class="carousel" id="basicCarousel">
+        <a class="carousel-item" href="#one!">
+         "<img src="https://picsum.photos/id/1058/600/400" alt="Soccer ball on a field" />
+        </a>
+        <a class="carousel-item" href="#two!">
+         "<img src="https://picsum.photos/id/1077/600/400" alt="Sports stadium and track" />
+        </a>
+        <a class="carousel-item" href="#three!">
+       "<img src="https://picsum.photos/id/146/600/400" alt="Person on a bicycle" />
+        </a>
+        <a class="carousel-item" href="#four!">
+       "<img src="https://picsum.photos/id/73/600/400" alt="Baseball field and items" />
+        </a>
+        <a class="carousel-item" href="#five!">
+        "<img src="https://picsum.photos/id/1022/600/400" alt="Person surfing a wave" />
+        </a>
+      </div>
+
+
+      <p class="grey-text"> Tip: Try dragging/swiping the carousel.
+      </p>
+    </section>
+
+
+    <div class="divider"></div>
+
+
+
+      
