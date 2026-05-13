@@ -1,145 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Victory Vault - Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Vault - Shop</title>
 
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
+    <style>
+        /* Ensuring style consistency with the "Victory Vault" main page */
+        body { 
+            padding-bottom: 48px; 
+            text-align: center; /* Matches the clean, centered look */
+        }
+        header { 
+            margin-bottom: 24px; 
+            padding-top: 20px;
+        }
+        .demo-section { margin-top: 32px; }
+        .carousel { margin-top: 12px; height: 450px !important; } /* Materialize carousels need a height */
+        
+        /* Centering the forms to match the style */
+        form {
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+            width: 100%;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-<h1>Victory Vault Shop</h1>
+    <h1>Victory Vault Shop</h1>
+    <h3>Equipment and Gear for Every Athlete</h3>
 
-<nav>
-<a href="index.html">Home</a> |
-<a href="shop.html">Shop</a> |
-<a href="livescores.html">Live Scores</a> |
-<a href="community.html">Community</a> |
-<a href="about.html">About</a> |
-<a href="materialize.html">Materialize</a> |
-<a href="jquery.html">JQuery</a> |
-<a href="bootstrap.html">Bootstrap</a>
-
-</nav>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Materialize JavaScript including Carousel + Collapsible Demo</title>
-
-
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-
-
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-
-  <style>
-    body { padding-bottom: 48px; }
-    header { margin-bottom: 24px; }
-    .demo-section { margin-top: 32px; }
-    .controls .btn { margin-right: 8px; margin-bottom: 8px; }
-    .carousel { margin-top: 12px; }
-
-
-    
-    .collapsible-body p { margin-top: 0; }
-  </style>
-</head>
-
-
-<body>
-  
-  <header>
-    <nav class="blue">
-      <div class="nav-wrapper container">
-     
+    <nav style="background-color: transparent; box-shadow: none; color: #333;">
+        <div class="nav-wrapper">
+            <a href="index.html" class="black-text">Home</a> |
+            <a href="shop.html" class="black-text">Shop</a> |
+            <a href="livescores.html" class="black-text">Live Scores</a> |
+            <a href="community.html" class="black-text">Community</a> |
+            <a href="about.html" class="black-text">About</a> |
+            <a href="materialize.html" class="black-text">Materialize</a> |
+            <a href="jquery.html" class="black-text">JQuery</a> |
+            <a href="bootstrap.html" class="black-text">Bootstrap</a>
+        </div>
     </nav>
-  </header>
-<div id="radio-section" class="section container">
-       <h2>Select Your Favorite Sport</h2>
-       <form>
-           <p>
-               <label>
-                   <input name="Sport" type="radio" value="Football" onclick="displaySport()"/>
-                   <span>Football</span>
-               </label>
-           </p>
-           <p>
-               <label>
-                   <input name="Sport" type="radio" value="Basketball" onclick="displaySport()"/>
-                   <span>Basketball</span>
-               </label>
-           </p>
-           <p>
-               <label>
-                   <input name="Sport" type="radio" value="Baseball" onclick="displaySport()"/>
-                   <span>Baseball</span>
-               </label>
-           </p>
-       </form>
-       <div id="pastry-response"></div>
-   </div>
- 
-   <div id="feedback-section" class="section container">
-       <h2>Subscribe for Updates</h2>
-       <form onsubmit="submitEmail(event)">
-           <div class="input-field">
-               <input id="email" type="email" required>
-               <label for="email">Email</label>
-           </div>
-           <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
-       </form>
-       <div id="email-response"></div>
-   </div>
+</header>
 
-
-
-
+<main class="container">
     
-    <section id="basic" class="demo-section">
-
-
-      <div class="controls">
-        <button id="basicPrev" class="btn waves-effect">Prev</button>
-        <button id="basicNext" class="btn waves-effect">Next</button>
-      
-      </div>
-
-
-      <div class="carousel" id="basicCarousel">
-        <a class="carousel-item" href="#one!">
-         "<img src="https://picsum.photos/id/1058/600/400" alt="Soccer ball on a field" />
-        </a>
-        <a class="carousel-item" href="#two!">
-         "<img src="https://picsum.photos/id/1077/600/400" alt="Sports stadium and track" />
-        </a>
-        <a class="carousel-item" href="#three!">
-       "<img src="https://picsum.photos/id/146/600/400" alt="Person on a bicycle" />
-        </a>
-        <a class="carousel-item" href="#four!">
-       "<img src="https://picsum.photos/id/73/600/400" alt="Baseball field and items" />
-        </a>
-        <a class="carousel-item" href="#five!">
-        "<img src="https://picsum.photos/id/1022/600/400" alt="Person surfing a wave" />
-        </a>
-      </div>
-
-
-      <p class="grey-text"> Tip: Try dragging/swiping the carousel.
-      </p>
-    </section>
-
+    <div id="radio-section" class="section">
+        <h2>Select Your Favorite Sport</h2>
+        <form>
+            <p>
+                <label>
+                    <input name="Sport" type="radio" value="Football" onclick="displaySport()"/>
+                    <span>Football</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="Sport" type="radio" value="Basketball" onclick="displaySport()"/>
+                    <span>Basketball</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="Sport" type="radio" value="Baseball" onclick="displaySport()"/>
+                    <span>Baseball</span>
+                </label>
+            </p>
+        </form>
+        <div id="pastry-response"></div>
+    </div>
 
     <div class="divider"></div>
 
+    <section id="basic" class="demo-section">
+        <h2>Featured Gear</h2>
+        <div class="controls">
+            <button id="basicPrev" class="btn waves-effect blue">Prev</button>
+            <button id="basicNext" class="btn waves-effect blue">Next</button>
+        </div>
 
+        <div class="carousel" id="basicCarousel">
+            <a class="carousel-item" href="#one!"><img src="https://picsum.photos/id/1058/600/400" alt="Soccer"></a>
+            <a class="carousel-item" href="#two!"><img src="https://picsum.photos/id/1077/600/400" alt="Stadium"></a>
+            <a class="carousel-item" href="#three!"><img src="https://picsum.photos/id/146/600/400" alt="Bicycle"></a>
+            <a class="carousel-item" href="#four!"><img src="https://picsum.photos/id/73/600/400" alt="Baseball"></a>
+            <a class="carousel-item" href="#five!"><img src="https://picsum.photos/id/1022/600/400" alt="Surfing"></a>
+        </div>
+    </section>
 
-      
+    <div class="divider"></div>
+
+    <div id="feedback-section" class="section">
+        <h2>Subscribe for Updates</h2>
+        <form onsubmit="submitEmail(event)">
+            <div class="input-field">
+                <input id="email" type="email" required class="validate">
+                <label for="email">Email Address</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light blue">Subscribe</button>
+        </form>
+        <div id="email-response"></div>
+    </div>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Initialize Carousel
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems);
+
+        // Custom Next/Prev Buttons
+        $('#basicNext').click(function() {
+            var inst = M.Carousel.getInstance(document.getElementById('basicCarousel'));
+            inst.next();
+        });
+        $('#basicPrev').click(function() {
+            var inst = M.Carousel.getInstance(document.getElementById('basicCarousel'));
+            inst.prev();
+        });
+    });
+
+    function displaySport() {
+        const selected = document.querySelector('input[name="Sport"]:checked').value;
+        document.getElementById('pastry-response').innerHTML = "Showing gear for: <strong>" + selected + "</strong>";
+    }
+
+    function submitEmail(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        document.getElementById('email-response').innerText = "Thank you! " + email + " has been added to our list.";
+    }
+</script>
+
+</body>
+</html>
